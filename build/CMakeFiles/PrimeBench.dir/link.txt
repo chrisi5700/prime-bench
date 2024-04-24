@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-11 -O3 -DNDEBUG -rdynamic CMakeFiles/PrimeBench.dir/main.cpp.o -o PrimeBench  /usr/local/lib/libbenchmark.a -lpthread -lrt 

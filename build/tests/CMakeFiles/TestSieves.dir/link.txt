@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-11 -O3 -DNDEBUG -rdynamic -fsanitize=address CMakeFiles/TestSieves.dir/test_sieves.cpp.o -o TestSieves  ../lib/libgtest_main.a ../lib/libgtest.a 

@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-11 -O3 -DNDEBUG -rdynamic CMakeFiles/TestAlgo.dir/test.cpp.o -o TestAlgo  -lpthread 

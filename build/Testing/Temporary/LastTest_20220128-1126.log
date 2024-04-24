@@ -1,0 +1,38 @@
+Start testing: Jan 28 12:26 CET
+----------------------------------------------------------
+1/1 Testing: TestEachSieve
+1/1 Test: TestEachSieve
+Command: "/home/chris/Documents/cpp/PrimesBench/build/tests/TestSieves"
+Directory: /home/chris/Documents/cpp/PrimesBench/build/tests
+"TestEachSieve" start time: Jan 28 12:26 CET
+Output:
+----------------------------------------------------------
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from FindPrimes
+[ RUN      ] FindPrimes.NaiveImpl
+[       OK ] FindPrimes.NaiveImpl (0 ms)
+[ RUN      ] FindPrimes.SieveOfAktin
+[       OK ] FindPrimes.SieveOfAktin (340 ms)
+[ RUN      ] FindPrimes.SieveOfAktin2
+[       OK ] FindPrimes.SieveOfAktin2 (303 ms)
+[ RUN      ] FindPrimes.SieveOfSundaram
+[       OK ] FindPrimes.SieveOfSundaram (299 ms)
+[ RUN      ] FindPrimes.SieveOfEratosthenes
+[       OK ] FindPrimes.SieveOfEratosthenes (308 ms)
+[ RUN      ] FindPrimes.SieveOfEuler
+[       OK ] FindPrimes.SieveOfEuler (306 ms)
+[----------] 6 tests from FindPrimes (1556 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (1556 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   1.67 sec
+----------------------------------------------------------
+Test Passed.
+"TestEachSieve" end time: Jan 28 12:26 CET
+"TestEachSieve" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: Jan 28 12:26 CET

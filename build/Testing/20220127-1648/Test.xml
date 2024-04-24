@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-x86_64-linux-gnu-g++-11"
+	BuildStamp="20220127-1648-Experimental"
+	Name="chris-B450M-GAMING"
+	Generator="ctest-3.18.4"
+	CompilerName="/bin/x86_64-linux-gnu-g++-11"
+	CompilerVersion="11.2.0"
+	OSName="Linux"
+	Hostname="chris-B450M-GAMING"
+	OSRelease="5.13.0-27-generic"
+	OSVersion="#29-Ubuntu SMP Wed Jan 12 17:36:47 UTC 2022"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="8"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="15945"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3700"
+	>
+	<Testing>
+		<StartDateTime>Jan 27 19:23 CET</StartDateTime>
+		<StartTestTime>1643307784</StartTestTime>
+		<TestList>
+			<Test>./tests/TestEachSieve</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>TestEachSieve</Name>
+			<Path>./tests</Path>
+			<FullName>./tests/TestEachSieve</FullName>
+			<FullCommandLine>/home/chris/Documents/cpp/PrimesBench/build/tests/TestSieves</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>10.1833</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/chris/Documents/cpp/PrimesBench/build/tests/TestSieves</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNkj1rwzAQhnf/ihudwcZ2iDt1CDQNpZCEmE7Gg4ovrYh1Cvpw/35lOw1qwY3eTdKj59Dp6sdbGjhaIk4fUIJBbTSclBSQjwvQlhtMozq5pYFtJ99ZN50j9VxJEkiORZPYyx/4l/SZU3tQXKCOaji+7WBM4+2nO8Z7fBGXzhFT9q8zBMQZCL2YVVUce9yf1mfDadbmQxAX2SoPdhZB0mKwFg8h1spSyxQT97w/3GDOliHmjWJGavOJNLb+X7vPjh0Jq2A7VHfVAzQ4l9cuB0wKxHmWlyvHg5GGdYsobBoNMpW08st9vT/ss0MOilE6FSu9Yu5Fh3VVbZ6GZ18vp9E38j38Bg==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Jan 27 19:23 CET</EndDateTime>
+		<EndTestTime>1643307794</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

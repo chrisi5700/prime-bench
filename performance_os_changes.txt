@@ -1,0 +1,8 @@
+Disable cpu scaling
+sudo cpupower frequency-set -g performance
+sudo cpupower frequency-set -g ondemand // reenables
+
+disable nmi watchdog
+sudo sysctl kernel.nmi_watchdog=0
+sudo sysctl kernel.nmi_watchdog=1   // reenables
+

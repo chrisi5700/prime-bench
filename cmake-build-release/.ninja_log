@@ -1,0 +1,12 @@
+# ninja log v5
+2	1893	1708695644200540177	CMakeFiles/PrimeBench.dir/main.cpp.o	794b077074b4ab56
+7406	7868	1708601236375800952	lib/libgtest.a	d83941b3e8dad709
+2	2801	1708607432385106052	tests/CMakeFiles/TestSieves.dir/test_sieves.cpp.o	ff832fa88349e84d
+1893	1981	1708695644284541779	PrimeBench	380c6cdc470562bc
+0	342	1713955553533940017	build.ninja	318c46f46a35d2a3
+904	979	1708692875947122108	TestAlgo	5e30a50ebdb1dcc0
+1	904	1708692875875121001	CMakeFiles/TestAlgo.dir/test.cpp.o	6df2c6bc4d33f36
+2801	2900	1708607432485107586	tests/TestSieves	7e138b3c423b921a
+0	7405	1708601235915794168	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	952fb067d4cdd0a8
+7868	7934	1708601236443801954	lib/libgtest_main.a	89b933d3f1eae8fd
+0	995	1708601229507699570	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	8f33cde7dfc269f3

@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-11 -O3 -DNDEBUG -rdynamic CMakeFiles/sieve_of_aktin.dir/test_soa.cpp.o -o sieve_of_aktin  ../lib/libgtest_main.a ../lib/libgtest.a 
