@@ -63,6 +63,7 @@ std::vector<T> sieve_of_aktin(T limit)
         }
     }
     std::vector<T> primes{2, 3};
+    primes.reserve(limit / std::log(limit));
     // Print primes using sieve[]
     for (T a = 5; a < limit; a++)
     {
@@ -131,6 +132,8 @@ std::vector<T> sieve_of_aktin2(const T limit)
         }
     }
     std::vector<T> primes{2, 3};
+    primes.reserve(limit / std::log(limit));
+
     // Print primes using sieve[]
     for (T a = 5; a < limit; a++)
     {
