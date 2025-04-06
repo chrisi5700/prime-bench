@@ -1,7 +1,8 @@
 #include "Concurrent/find_primesv3.hpp"
 #include "Concurrent/find_primesv2.hpp"
 #include "Concurrent/find_primesv4.hpp"
-#include "Concurrent/find_primesv5.hpp"
+#include "Sequential/find_primesv5.hpp"
+#include "Sequential/find_primesv6.hpp"
 
 
 #include "Sequential/prime_seq.hpp"
@@ -14,7 +15,8 @@
 #include <iostream>
 #include <benchmark/benchmark.h>
 
-
+#include "Concurrent/find_primesv7.hpp"
+#include "Concurrent/find_primesv8.hpp"
 
 
 void BM_Sieve(benchmark::State &state, auto sieve)
@@ -69,6 +71,12 @@ void BM_Aktin(benchmark::State &state)
     BM_Sieve(state, sieve_of_aktin<std::uint32_t>);
 }
 
+void BM_Aktin2(benchmark::State &state)
+{
+    BM_Sieve(state, sieve_of_aktin2<std::uint32_t>);
+}
+
+
 void BM_Sundaram(benchmark::State &state)
 {
     BM_Sieve(state, sieve_of_sundaram<std::uint32_t>);
@@ -84,17 +92,33 @@ void BM_PrimesV5(benchmark::State &state)
     BM_Sieve(state, primesv5);
 }
 
+void BM_PrimesV6(benchmark::State &state)
+{
+    BM_Sieve(state, primesv6);
+}
+void BM_PrimesV7(benchmark::State &state)
+{
+    BM_Sieve(state, primesv7);
+}
 
-// BENCHMARK(BM_Eratosthenes)->RangeMultiplier(2)->Range(1U << 24U, 1U << 30U)->MeasureProcessCPUTime()->Complexity()->UseRealTime()->Unit(benchmark::kMillisecond);
-// BENCHMARK(BM_Euler)->RangeMultiplier(2)->Range(1U << 24U, 1U << 30U)->MeasureProcessCPUTime()->Complexity()->UseRealTime()->Unit(benchmark::kMillisecond);
-// BENCHMARK(BM_Aktin)->RangeMultiplier(2)->Range(1U << 24U, 1U << 30U)->MeasureProcessCPUTime()->Complexity()->UseRealTime()->Unit(benchmark::kMillisecond);
-// BENCHMARK(BM_Sundaram)->RangeMultiplier(2)->Range(1U << 24U, 1U << 30U)->MeasureProcessCPUTime()->Complexity()->UseRealTime()->Unit(benchmark::kMillisecond);
+void BM_PrimesV8(benchmark::State &state)
+{
+    BM_Sieve(state, primesv8);
+}
 
-// BENCHMARK(BM_Eratosthenes)->Arg(1'000'000'000)->Unit(benchmark::kMillisecond);
-// BENCHMARK(BM_EratosthenesSkip2)->Arg(1'000'000'000)->Unit(benchmark::kMillisecond);
-BENCHMARK(BM_EulerSkip2)->Arg(1'000'000'000)->Unit(benchmark::kMillisecond)->MeasureProcessCPUTime()->Complexity()->UseRealTime();
-BENCHMARK(BM_PrimesV5)->Arg(1'000'000'000)->Unit(benchmark::kMillisecond)->MeasureProcessCPUTime()->Complexity()->UseRealTime();
-BENCHMARK(BM_PrimesV4)->Arg(1'000'000'000)->Unit(benchmark::kMillisecond)->MeasureProcessCPUTime()->Complexity()->UseRealTime();
+
+inline constexpr std::uint32_t MAX = std::numeric_limits<std::uint32_t>::max();
+
+
+// BENCHMARK(BM_EratosthenesSkip2)->Arg(MAX)->Unit(benchmark::kMillisecond);
+// BENCHMARK(BM_PrimesV5)->Arg(MAX)->Unit(benchmark::kMillisecond);
+// BENCHMARK(BM_PrimesV6)->Arg(MAX)->Unit(benchmark::kMillisecond);
+// BENCHMARK(BM_PrimesV7)->Arg(MAX)->Unit(benchmark::kMillisecond)->Iterations(5);
+BENCHMARK(BM_PrimesV8)->Arg(MAX)->Unit(benchmark::kMillisecond)->Iterations(5);
+
+// BENCHMARK(BM_EulerSkip2)->Arg(MAX)->Unit(benchmark::kMillisecond);
+
+// BENCHMARK(BM_PrimesV6)->Arg()->Unit(benchmark::kMillisecond);
 
 
 BENCHMARK_MAIN();
